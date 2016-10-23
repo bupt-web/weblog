@@ -1,0 +1,145 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@width: 800px;
+
+header {
+  @height: 60px;
+
+  height: @height;
+	line-height: @height;
+  border-bottom: 2px solid rgba(32, 32, 32, 0.1);
+  text-align: center;
+
+  #logo {
+    height: @height;
+    display: inline;
+    line-height: @height;
+		margin-left: 40px;
+    float: left;
+
+    h1 {
+      display: inline-block;
+      font-size: 28px;
+			text-shadow: 0px 0px 2px black;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  nav {
+    margin-right: 40px;
+    display: inline-block;
+    height: @height;
+    float: right;
+    //margin-right: 100px;
+
+    ul {
+      list-style: none;
+      display: inline-block;
+      li {
+        display: inline-block;
+        margin-left: 10px;
+        a {
+          color: black;
+          display: inline-block;
+          padding-left: 10px;
+          padding-right: 10px;
+          text-decoration: none;
+          transition: all .1s linear;
+        }
+        a:hover {
+          color: white;
+          background-color: rgb(128, 128, 128);
+        }
+      }
+    }
+  }
+}
+
+main {
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 70%;
+
+	article {
+		margin-left: 40px;
+		margin-bottom: 20px;
+
+		h2 {
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 50px;
+
+			a {
+				color: black;
+				text-decoration: none;
+			}
+			a:before {
+				content: "[";
+				font-size: 24px;
+				margin-left: -2px;
+				margin-right: 3px;
+				transition: all .1s linear;
+			}
+			a:hover:before {
+				margin-left: -10px;
+				margin-right: 11px;
+			}
+			a:after {
+				content: "]";
+				font-size: 24px;
+				margin-left: 2px;
+				transition: all .1s linear;
+			}
+			a:hover:after {
+				margin-left: 10px;
+			}
+			a:hover {
+				text-shadow: 0 0 1px grey;
+			}
+		}
+		p {
+			margin-bottom: 5px;
+			word-break: break-all;
+		}
+	}
+}
+
+aside {
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-right: 40px;
+}
+
+footer {
+	clear: both;
+	border-top: 2px solid rgba(32, 32, 32, 0.1);
+	padding-top: 20px;
+  text-align: center;
+  //font-weight: bold;
+}

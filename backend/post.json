@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Hello World",
+    "author": "lsdsjy",
+    "time": "2016-10-22T08:41:45.867Z",
+    "text": "This is the first passage."
+  },
+  {
+    "id": 2,
+    "title": "And there it is",
+    "author": "lsdsjy",
+    "time": "2016-10-23T09:10:28.098Z",
+    "text": "This is the second passage."
+  }
+]
