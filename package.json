@@ -7,11 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:dev": "webpack-dev-server --inline --content-base public --history-api-fallback",
-    "start:prod": "webpack && node backend\\server.js"
+    "start:prod": "webpack && node backend/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bupt-web/weblog.git"
+    "url": "git+clone+https://github.com/bupt-web/weblog.git"
   },
   "author": "lsdsjy",
   "license": "ISC",
